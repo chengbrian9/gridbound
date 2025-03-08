@@ -1,8 +1,8 @@
 export default function QRLandingPage() {
   return (
-    <div className="flex flex-col items-center h-screen px-6 py-8 bg-[#FBFCF0] text-center">
+    <div className="flex flex-col items-center min-h-screen px-6 py-6 bg-[#FBFCF0] text-center justify-between">
       {/* Header */}
-      <div className="w-full mb-6">
+      <div className="w-full mb-4">
         <h1 className="text-4xl md:text-5xl font-bold tracking-wider text-[#78A66B]">
           GRID + BOUND
         </h1>
@@ -12,7 +12,7 @@ export default function QRLandingPage() {
       </div>
 
       {/* Main Content - Buttons */}
-      <div className="w-full max-w-xs mx-auto flex flex-col gap-4">
+      <div className="w-full max-w-xs mx-auto flex flex-col gap-3">
         <a href="/shop" className="w-full bg-[#78A66B] text-[#FBFCF0] py-3 px-6 text-xl tracking-wider hover:bg-[#78A66B]/80 transition-colors text-center">
           BUY NOTEBOOK
         </a>
@@ -26,14 +26,14 @@ export default function QRLandingPage() {
         </a>
       </div>
 
-      {/* Footer - Moved up to eliminate scrolling */}
-      <div className="w-full mt-auto pt-6 flex flex-col items-center">
+      {/* Footer */}
+      <div className="w-full flex flex-col items-center mt-4">
         {/* Instagram Link */}
         <a 
           href="https://instagram.com/gridandbound" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="mb-4"
+          className="mb-3"
         >
           <div className="w-10 h-10 rounded-full bg-[#78A66B] flex items-center justify-center">
             <svg 
