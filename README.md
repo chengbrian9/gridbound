@@ -1,85 +1,119 @@
-# Next.js Mobile App
+# Gridbound Engineering Notebook - Mobile Web App
 
-This is a mobile-optimized [Next.js](https://nextjs.org) application with responsive design, interactive elements, and a hamburger menu for mobile navigation.
+This is the mobile-optimized web application for [Gridbound](https://gridbound.com), an engineering notebook company. Built with [Next.js](https://nextjs.org), this application provides a responsive user experience with intuitive navigation for mobile users.
+
+## About Gridbound
+
+Gridbound provides high-quality engineering notebooks designed for professionals and students. Our web application allows users to:
+- Learn about our products
+- Scan QR codes on physical notebooks
+- Apply for grants and commissions
+- Access digital resources related to our notebooks
 
 ## Features
 
-- Responsive design optimized for mobile devices
-- Interactive hamburger menu for mobile navigation
-- Click animations for buttons and interactive elements
-- Reusable components (Navbar, Footer)
-- Multiple page routes (QR, Grants, Commissions, Thank You)
+- Mobile-first responsive design
+- Easy navigation with hamburger menu on mobile devices
+- Interactive elements with visual feedback
+- Consistent branding across all pages
+- Key sections: Home, QR code scanning, Grants program, Commissions
 
-## Getting Started
+## Getting Started for Developers
 
-First, run the development server:
+Follow these simple steps to set up the development environment:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository**
+   ```bash
+   git clone [repository-url]
+   cd nextjs-mobile-app
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **View the application**
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the application running locally.
+
+The page will automatically update as you make changes to the code.
 
 ## Project Structure
 
+The codebase is organized in a standard Next.js App Router structure:
+
 ```
-├── public/          # Static assets
+├── public/          # Static assets (images, icons, etc.)
 ├── src/
-│   ├── app/         # Next.js app directory
+│   ├── app/         # Next.js app directory (pages)
 │   │   ├── page.tsx # Home page
-│   │   ├── qr/      # QR page
-│   │   ├── grants/  # Grants page
-│   │   ├── commissions/ # Commissions page
-│   │   ├── thank-you/   # Thank you page
-│   │   └── layout.tsx   # Root layout
+│   │   ├── qr/      # QR code scanning functionality
+│   │   ├── grants/  # Gridbound grants program
+│   │   ├── commissions/ # Commission request page
+│   │   ├── thank-you/   # Confirmation page
+│   │   └── layout.tsx   # Root layout with common elements
 │   └── components/  # Reusable components
-│       ├── Navbar.tsx   # Navigation bar with mobile menu
-│       └── Footer.tsx   # Reusable footer component
+│       ├── Navbar.tsx   # Navigation with mobile menu
+│       └── Footer.tsx   # Site footer
 ├── next.config.js   # Next.js configuration
-└── vercel.json      # Vercel deployment configuration
+└── vercel.json      # Deployment configuration
 ```
 
-## Customization
+This structure follows Next.js best practices and makes it easy to locate and modify specific parts of the application.
 
-- Update colors and styling in the respective component files
-- Modify the Navbar links in `src/components/Navbar.tsx`
-- Customize the Footer in `src/components/Footer.tsx`
+## Common Development Tasks
 
-## Deploy on Vercel
+### Styling and Branding
+- Gridbound brand colors and styling are defined in component files
+- To update the color scheme, modify the CSS variables in the respective components
+- All styling follows Gridbound's brand guidelines
 
-### Option 1: Automatic Deployment (Recommended)
+### Navigation
+- To add or modify navigation links, edit `src/components/Navbar.tsx`
+- The mobile menu (hamburger) is automatically responsive
 
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Sign up or log in to [Vercel](https://vercel.com)
-3. Click "New Project" and import your repository
-4. Vercel will automatically detect Next.js and configure the build settings
-5. Click "Deploy"
+### Content Updates
+- Page content is defined in the respective page files under `src/app/`
+- Update text, images, and layout directly in these files
+- For reusable content, consider creating new components in `src/components/`
 
-### Option 2: Manual Deployment using Vercel CLI
+## Deployment
 
-1. Install Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
+The Gridbound web application is deployed using Vercel, which provides a seamless deployment experience for Next.js applications.
 
-2. Log in to Vercel:
-   ```bash
-   vercel login
-   ```
+### Deployment Process
 
-3. Deploy from your project directory:
-   ```bash
-   vercel
-   ```
+1. **Prepare for deployment**
+   - Ensure all changes are committed to the repository
+   - Run tests locally to verify functionality: `npm test`
 
-4. Follow the prompts to complete the deployment
+2. **Deploy to production**
+   - The main branch is automatically deployed to production when changes are pushed
+   - Preview deployments are created for pull requests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Manual deployment (if needed)**
+   - Install Vercel CLI: `npm install -g vercel`
+   - Log in: `vercel login`
+   - Deploy: `vercel`
 
-For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+### Environment Variables
+
+For local development with API integrations, create a `.env.local` file with the necessary environment variables (see `.env.example` for reference).
+
+### Troubleshooting Deployment
+
+If you encounter issues during deployment:
+1. Check the build logs in the Vercel dashboard
+2. Verify that all dependencies are correctly installed
+3. Ensure environment variables are properly configured
+
+For more details, refer to the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
