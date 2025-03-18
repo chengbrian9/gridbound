@@ -1,3 +1,5 @@
+import { Button } from '@/components/Button';
+
 export default function Home() {
   return (
     <div className="px-4 py-8 md:px-8 md:py-12 max-w-7xl mx-auto">
@@ -15,9 +17,12 @@ export default function Home() {
             <p className="text-black mb-8 text-lg">
               Our engineering paper combines the precision you need with the flexibility you want. Perfect for sketches, calculations, and technical drawings.
             </p>
-            <button className="btn-primary text-[#78A66B] border-2 border-[#78A66B] hover:bg-[#78A66B] hover:text-[#FBFCF0] py-3 px-8 text-xl tracking-wider transition-colors">
+            <Button
+              variant="outline"
+              className="py-3 px-8 text-xl tracking-wider"
+            >
               SHOP NOW
-            </button>
+            </Button>
           </div>
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-full max-w-md aspect-square">
@@ -86,18 +91,24 @@ export default function Home() {
           Join engineers, architects, and designers who trust GRID + BOUND for their technical documentation needs.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="btn-primary text-[#78A66B] border-2 border-[#78A66B] hover:bg-[#78A66B] hover:text-[#FBFCF0] py-3 px-8 text-xl tracking-wider transition-colors">
+          <Button
+            variant="primary"
+            className="py-3 px-8 text-xl tracking-wider"
+          >
             SHOP COLLECTION
-          </button>
-          <button className="bg-[#78A66B] text-[#FBFCF0] py-3 px-8 text-xl tracking-wider hover:bg-[#78A66B]/80 transition-colors">
+          </Button>
+          <Button
+            variant="primary"
+            className="py-3 px-8 text-xl tracking-wider"
+          >
             LEARN MORE
-          </button>
+          </Button>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="mt-20 pt-8 border-t-2 border-[#78A66B] text-center text-[#78A66B] text-lg">
-        <p>© {new Date().getFullYear()} GRID + BOUND. ALL RIGHTS RESERVED.</p>
+        <p> {new Date().getFullYear()} GRID + BOUND. ALL RIGHTS RESERVED.</p>
       </footer>
     </div>
   );

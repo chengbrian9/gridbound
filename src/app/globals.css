@@ -1,27 +1,35 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 :root {
   --background: #FBFCF0;
   --foreground: #000000;
   --primary: #78A66B;
+  --primary-font: 'Bebas Neue', sans-serif;
+  --secondary-font: 'Futura', sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
-  --font-heading: var(--font-bebas-neue);
+  --font-heading: var(--primary-font);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-bebas-neue), sans-serif;
+  font-family: var(--secondary-font);
+  font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-bebas-neue), sans-serif;
+  font-family: var(--primary-font);
   letter-spacing: 0.05em;
+}
+
+.font-primary {
+  font-family: var(--primary-font);
 }
 
 .btn-primary {

@@ -1,31 +1,26 @@
-'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
+
 import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import EmailSubscribeForm from '@/components/EmailSubscribeForm';
+import { CONTACT } from '@/constants/theme';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'GRID + BOUND | Engineering Grants',
+  description: 'Apply for engineering project grants ranging from $5,000 to $10,000 for qualified projects.',
+};
+
+/**
+ * Grants Page Component
+ * Provides information about the grant program and collects email subscriptions
+ */
 export default function GrantsPage() {
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log('Email submitted:', email);
-    setSubmitted(true);
-    setEmail('');
-  };
 
   return (
     <div className="flex flex-col min-h-screen px-6 py-8 bg-[#FBFCF0] text-center">
       {/* Header */}
-      <div className="w-full mb-8">
-        <Link href="/" className="inline-block active:scale-95 transform transition-all duration-100">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-wider text-[#78A66B]">
-            GRID + BOUND
-          </h1>
-        </Link>
-      </div>
+      <PageHeader title="GRID + BOUND" href="/qr" />
 
       {/* Main Content */}
       <div className="w-full max-w-xs mx-auto">
@@ -52,34 +47,9 @@ export default function GrantsPage() {
         </div>
         
         {/* Email Form */}
-        <div className="w-full mb-12">
-          {submitted ? (
-            <div className="bg-[#78A66B]/20 p-4 rounded">
-              <p className="text-lg font-medium">Thank you! We&apos;ll keep you updated.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email address"
-                required
-                className="w-full px-4 py-3 border-2 border-[#78A66B] bg-transparent focus:outline-none focus:border-[#5e8353] transition-all duration-100"
-              />
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-[#78A66B] text-[#FBFCF0] text-lg tracking-wider hover:bg-[#78A66B]/80 active:bg-[#5e8353] active:scale-95 active:shadow-inner transform transition-all duration-100"
-              >
-                SUBSCRIBE
-              </button>
-            </form>
-          )}
-        </div>
+        <EmailSubscribeForm />
       </div>
-
-      {/* Footer */}
-      <Footer showDonationLink={true} />
+      <Footer showDonationLink={true} contactEmail={CONTACT.EMAIL} />
     </div>
   );
 }
