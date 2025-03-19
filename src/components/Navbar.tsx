@@ -77,16 +77,13 @@ export default function Navbar() {
       
       {/* Navigation links - hidden on mobile, visible on larger screens */}
       <div className="hidden md:flex space-x-8">
-        <Link href="/" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline">
-          PRODUCTS
-        </Link>
-        <Link href="/about" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline">
+        <Link href="/about" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           ABOUT
         </Link>
-        <Link href="/shop" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline">
+        <Link href="/shop" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           SHOP
         </Link>
-        <Link href="/contact" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline">
+        <Link href="/contact" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           CONTACT
         </Link>
       </div>
@@ -97,29 +94,22 @@ export default function Navbar() {
       >
         <div className="flex flex-col space-y-1 py-3 px-6">
           <Link 
-            href="/" 
-            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8]"
-            onClick={handleLinkClick}
-          >
-            PRODUCTS
-          </Link>
-          <Link 
             href="/about" 
-            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8]"
+            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8] font-primary"
             onClick={handleLinkClick}
           >
             ABOUT
           </Link>
           <Link 
             href="/shop" 
-            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8]"
+            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8] font-primary"
             onClick={handleLinkClick}
           >
             SHOP
           </Link>
           <Link 
             href="/contact" 
-            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3"
+            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 font-primary"
             onClick={handleLinkClick}
           >
             CONTACT

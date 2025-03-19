@@ -47,7 +47,7 @@ export default function Footer({
       {!showDonationLink && (
         <div>
           Need to get in touch? <a
-            href={`mailto:${contactEmail}`}
+            href={`mailto:${contactEmail}?subject=General Inquiry`}
             className="text-[#78A66B] hover:text-[#5e8353] underline underline-offset-4 transition-colors"
           >
             Contact Us
@@ -59,7 +59,7 @@ export default function Footer({
       {showDonationLink && (
         <div>
           Interested in donating? <a
-            href={`mailto:${contactEmail}`}
+            href={`mailto:${contactEmail}?subject=Donation Interest`}
             className="text-[#78A66B] hover:text-[#5e8353] underline underline-offset-4 transition-colors"
           >
             Contact Us
