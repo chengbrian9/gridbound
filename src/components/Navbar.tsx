@@ -86,9 +86,9 @@ export default function Navbar() {
         <Link href="/commissions" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           COMMISSIONS
         </Link>
-        <Link href="/contact" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
+        <a href="mailto:crew@gridbound.org" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           CONTACT
-        </Link>
+        </a>
       </div>
       
       {/* Mobile menu - animated slide down when menu is open */}
@@ -118,13 +118,13 @@ export default function Navbar() {
           >
             COMMISSIONS
           </Link>
-          <Link 
-            href="/contact" 
+          <a 
+            href="mailto:crew@gridbound.org" 
             className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 font-primary"
             onClick={handleLinkClick}
           >
             CONTACT US
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

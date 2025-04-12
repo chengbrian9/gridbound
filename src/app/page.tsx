@@ -86,10 +86,15 @@ export default function Home() {
           </h2>
           <div className="text-xl text-left">
             <p>Engineering paper used to only come in glue-top pads.</p>
+            <br />
             <p>You had to tear each sheet off in order to save them.</p>
+            <br />
             <p>Or else papers got ripped off, lost or crumbled.</p>
+            <br />
             <p>It was annoying to keep organized.</p>
+            <br />
             <p>And we eventually got fed up.</p>
+            <br />
             <p>So in 2018 we created</p>
             <p className="text-2xl  text-[#78A66B] font-bold mt-2">GRID+BOUND</p>
           </div>
