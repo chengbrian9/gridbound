@@ -21,8 +21,12 @@ export default function CommissionsPage() {
       {/* Main Content */}
       <div className="w-full max-w-xs mx-auto">
         <h2 className="text-3xl md:text-5xl mb-6 text-center">
-          Earn Up to 25% Commission by Bringing Grid+Bound to Your College Bookstore
+          Earn Commissions
         </h2>
+          <p className="text-lg mb-6 text-center">
+          Earn Up to 25% Commission by Bringing Grid+Bound to Your College Bookstore
+
+          </p>
     
         {/* Steps */}
         <div className="space-y-6 text-left">
@@ -33,7 +37,7 @@ export default function CommissionsPage() {
     
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-[#78A66B]">Step 2: Reach Out</h3>
-            <p className="text-lg">Call, email, or visit in person. Use our email template and share our wholesale pricing.</p>
+            <p className="text-lg">Call, email, or visit in person with your notebook. Use our email template that includes a quick sell and photos.</p>
           </div>
     
           <div className="space-y-2">
@@ -45,7 +49,7 @@ export default function CommissionsPage() {
                 className="text-[#78A66B] underline transition-colors"
               >
                 {CONTACT.CREW_EMAIL}
-              </a>, and we&apos;ll take it from there.
+              </a>, and we&apos;ll share pricing and take it from there.
             </p>
           </div>
     
@@ -56,7 +60,7 @@ export default function CommissionsPage() {
         </div>
       </div>
     
-      <Footer showDonationLink={false} contactEmail={CONTACT.EMAIL} />
+      <Footer showDonationLink={false} contactEmail={CONTACT.EMAIL} emailSubject="Commission Question" />
     </div>
   );
 }

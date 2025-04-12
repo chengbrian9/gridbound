@@ -9,7 +9,8 @@ import { CONTACT } from '@/constants/theme';
 
 export default function Footer({ 
   showDonationLink = false,
-  contactEmail = CONTACT.EMAIL 
+  contactEmail = CONTACT.EMAIL,
+  emailSubject
 }: FooterProps) {
   return (
     <footer className="w-full pt-6 flex flex-col items-center">
@@ -47,7 +48,7 @@ export default function Footer({
       {!showDonationLink && (
         <div>
           Need to get in touch? <a
-            href={`mailto:${contactEmail}?subject=General Inquiry`}
+            href={`mailto:${contactEmail}?subject=${emailSubject || 'General Inquiry'}`}
             className="text-[#78A66B] hover:text-[#5e8353] underline underline-offset-4 transition-colors"
           >
             Contact Us
@@ -59,7 +60,7 @@ export default function Footer({
       {showDonationLink && (
         <div>
           Interested in donating? <a
-            href={`mailto:${contactEmail}?subject=Donation Interest`}
+            href={`mailto:${contactEmail}?subject=${emailSubject || 'Donation Interest'}`}
             className="text-[#78A66B] hover:text-[#5e8353] underline underline-offset-4 transition-colors"
           >
             Contact Us

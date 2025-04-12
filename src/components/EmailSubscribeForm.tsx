@@ -24,13 +24,13 @@ export default function EmailSubscribeForm() {
         },
         body: JSON.stringify({ email }),
       });
-
+      setSubmitted(true);
+      setEmail('');
+      
       const data = await response.json();
 
       if (response.ok) {
         setMessage('Thank you! We\'ll keep you updated.');
-        setSubmitted(true);
-        setEmail('');
       } else {
         setMessage(data.error || 'Error submitting email. Please try again.');
       }

@@ -2,7 +2,7 @@
 
 import Footer from '@/components/Footer';
 import PageHeader from '@/components/PageHeader';
-import EmailSubscribeForm from '@/components/EmailSubscribeForm';
+
 import { CONTACT } from '@/constants/theme';
 import { Metadata } from 'next';
 
@@ -38,16 +38,21 @@ export default function GrantsPage() {
           </p>
           
           <p className="text-lg font-medium">
-            Information on how to apply and qualify coming soon.
-          </p>
-          
-          <p className="text-lg">
-            To stay updated enter your email below:
+            Apply for a grant using the form below:
           </p>
         </div>
         
-        {/* Email Form */}
-        <EmailSubscribeForm />
+        {/* Airtable Form */}
+        <div className="w-full overflow-hidden">
+          <iframe 
+            className="airtable-embed" 
+            src="https://airtable.com/embed/appvQBPACWF5foEr9/pagB1NOgLiU6Y6aG8/form" 
+            frameBorder="0" 
+            width="100%" 
+            height="533" 
+            style={{ background: 'transparent', border: '1px solid #ccc' }}
+          ></iframe>
+        </div>
       </div>
       <Footer showDonationLink={true} contactEmail={CONTACT.EMAIL} />
     </div>

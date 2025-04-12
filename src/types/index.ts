@@ -12,6 +12,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export interface FooterProps {
   showDonationLink?: boolean;
   contactEmail?: string;
+  emailSubject?: string;
 }
 
 export interface BackButtonProps {
