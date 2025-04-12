@@ -14,7 +14,7 @@ export const metadata: Metadata = {
  */
 export default function CommissionsPage() {
   return (
-    <div className="flex flex-col min-h-screen px-6 py-8 bg-[#FBFCF0]">
+    <div className="flex flex-col min-h-screen px-6 py-8 bg-[#FBFCF0] overflow-y-auto">
       {/* Header */}
       <PageHeader title="GRID + BOUND" href="/qr" />
     
@@ -37,7 +37,46 @@ export default function CommissionsPage() {
     
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-[#78A66B]">Step 2: Reach Out</h3>
-            <p className="text-lg">Call, email, or visit in person with your notebook. Use our email template that includes a quick sell and photos.</p>
+            <p className="text-lg">Call, email, or visit in person with your notebook.</p>
+            <p className="text-lg">You can download our product details below and attach it to the email template to send off to the bookstore.</p>
+            <div className="flex flex-wrap gap-3 mt-3">
+              <a 
+                href={`mailto:?subject=Grid%2BBound%20Engineering%20Notebooks&body=${encodeURIComponent(`Hi [First Name],
+
+I'm reaching out to introduce Grid+Bound — the first spiral-bound engineering notebook designed specifically for students who need more than a glue-top pad.
+
+We've solved the usual complaints with:
+
+• Clean tear-off perforated pages
+• Durable spiral binding
+• Built-in kangaroo pocket for loose sheets
+• Traditional green grid paper, 3-hole punched and binder-ready
+• QR code for easy reordering + student grant entry
+
+We're already stocked in 10+ university bookstores and on Amazon — students love it, and it stands out instantly on shelves.
+
+🔗 Attached is a one-page PDF with product images and pricing.
+
+We'd love to send samples or help get this into your store.
+
+Best,
+[Your Full Name]
+Grid+Bound (https://grid-bound.com)
+[Your Contact Info]
+[Website or Amazon link, if applicable]`)}`}
+                className="px-4 py-2 bg-[#78A66B] text-white rounded-md hover:bg-[#5e8353] transition-colors"
+              >
+                Use Template
+              </a>
+              <a 
+                href="/assets/gridbound-bookstore-info.pdf" 
+                target="_blank"
+                className="px-4 py-2 border border-[#78A66B] text-[#78A66B] rounded-md hover:bg-[#f0f7ed] transition-colors"
+                download
+              >
+                Download PDF
+              </a>
+            </div>
           </div>
     
           <div className="space-y-2">
@@ -55,7 +94,7 @@ export default function CommissionsPage() {
     
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-[#78A66B]">Step 4: Get Paid</h3>
-            <p className="text-lg">When the order is complete, we&apos;ll send you your commission.</p>
+            <p className="text-lg">When the order is complete, we&apos;ll send your commission.</p>
           </div>
         </div>
       </div>

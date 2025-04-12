@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 import { Button } from '@/components/Button';
 import Image from 'next/image';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/Asset 1.png';
 import { CONTACT } from '@/constants/theme';
 import { Metadata } from 'next';
 

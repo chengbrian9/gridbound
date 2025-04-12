@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function GrantsPage() {
 
   return (
-    <div className="flex flex-col min-h-screen px-6 py-8 bg-[#FBFCF0] text-center">
+    <div className="flex flex-col min-h-screen px-6 py-8 bg-[#FBFCF0] text-center overflow-y-auto">
       {/* Header */}
       <PageHeader title="GRID + BOUND" href="/qr" />
 
