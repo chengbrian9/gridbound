@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import ImageCarousel from '@/components/ImageCarousel';
+import Image from 'next/image';
 import { CONTACT } from '@/constants/theme';
 import { Metadata } from 'next';
 
@@ -31,10 +32,55 @@ export default function Home() {
         </div>
         
         {/* Heading */}
-        <div className="w-full max-w-xs mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-wider text-black mb-6">
-            We&apos;ve improved engineering paper. By alot. Seriously.
+        <div className="w-full max-w-xs mx-auto">
+          <h2 className="text-5xl md:text-4xl font-bold tracking-wider text-black mb-6 text-left">
+            We&apos;ve improved <span className="text-[#78A66B]">engineering paper</span>. By alot. Seriously.
           </h2>
+        </div>
+        
+        {/* Side-by-side product photos */}
+        <div className="w-full max-w-md mx-auto mb-10 flex justify-between gap-4">
+          <div className="w-1/2">
+            <Image 
+              src="/assets/Amazon Product Photos.png" 
+              alt="Grid+Bound engineering notebook - front view" 
+              width={500} 
+              height={500} 
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="w-1/2">
+            <Image 
+              src="/assets/Amazon Product Photos.png" 
+              alt="Grid+Bound engineering notebook - inside view" 
+              width={500} 
+              height={500} 
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+        
+        {/* Product Traits */}
+        <div className="w-full max-w-xs mx-auto mb-8">
+          <h2 className="text-4xl md:text-3xl font-bold tracking-wider text-black mb-4 text-left">
+            9&quot;x11&quot; notebook<br/>
+            3-hole punched<br/>
+            Pocket included<br/>
+            Perforated<br/>
+            150 pages
+          </h2>
+          <h2 className="text-4xl text-[#78A66B] font-bold mt-4 mb-6">
+            We were the first
+          </h2>
+          <div className="text-xl text-left">
+            <p>Engineering paper used to only come in glue-top pads.</p>
+            <p>You had to tear each sheet off in order to save them.</p>
+            <p>Or else papers got ripped off, lost or crumbled.</p>
+            <p>It was annoying to keep organized.</p>
+            <p>And we eventually got fed up.</p>
+            <p>So in 2018 we created</p>
+            <p className="text-2xl  text-[#78A66B] font-bold mt-2">GRID+BOUND</p>
+          </div>
         </div>
       </main>
       

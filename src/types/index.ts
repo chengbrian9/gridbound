@@ -16,10 +16,11 @@ export interface FooterProps {
 }
 
 export interface BackButtonProps {
-  href: string;
+  href?: string;
 }
 
 export interface PageHeaderProps {
   title: string;
-  href: string;
+  href?: string;
+  showBackButton?: boolean;
 }

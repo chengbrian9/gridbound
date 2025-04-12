@@ -77,11 +77,14 @@ export default function Navbar() {
       
       {/* Navigation links - hidden on mobile, visible on larger screens */}
       <div className="hidden md:flex space-x-8">
-        <Link href="/about" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
-          ABOUT
+        <Link href="/buy" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
+          BUY NOW
         </Link>
-        <Link href="/shop" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
-          SHOP
+        <Link href="/grants" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
+          GRANTS
+        </Link>
+        <Link href="/commissions" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
+          COMMISSIONS
         </Link>
         <Link href="/contact" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           CONTACT
@@ -93,19 +96,27 @@ export default function Navbar() {
         className={`w-full md:hidden absolute left-0 right-0 top-[72px] bg-[#FBFCF0] shadow-lg transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'} overflow-hidden`}
       >
         <div className="flex flex-col space-y-1 py-3 px-6">
-          <Link 
-            href="/about" 
-            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8] font-primary"
-            onClick={handleLinkClick}
-          >
-            ABOUT
-          </Link>
+
           <Link 
             href="/shop" 
             className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8] font-primary"
             onClick={handleLinkClick}
           >
-            SHOP
+            BUY NOW
+          </Link>
+          <Link 
+            href="/grants" 
+            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8] font-primary"
+            onClick={handleLinkClick}
+          >
+            GRANTS
+          </Link>
+          <Link 
+            href="/commissions" 
+            className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 border-b border-[#e9edd8] font-primary"
+            onClick={handleLinkClick}
+          >
+            COMMISSIONS
           </Link>
           <Link 
             href="/contact" 

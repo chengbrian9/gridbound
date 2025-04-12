@@ -20,7 +20,7 @@ export default function GrantsPage() {
   return (
     <div className="flex flex-col min-h-screen px-6 py-8 bg-[#FBFCF0] text-center overflow-y-auto">
       {/* Header */}
-      <PageHeader title="GRID + BOUND" href="/qr" />
+      <PageHeader title="GRID + BOUND" />
 
       {/* Main Content */}
       <div className="w-full max-w-xs mx-auto">

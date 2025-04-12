@@ -7,7 +7,7 @@
 import Link from 'next/link';
 import { BackButtonProps } from '@/types';
 
-export default function BackButton({ href }: BackButtonProps) {
+export default function BackButton({ href = '/' }: BackButtonProps) {
   return (
     <Link href={href} className="absolute left-0 p-2 transition-transform hover:scale-105 active:scale-95">
       <svg
