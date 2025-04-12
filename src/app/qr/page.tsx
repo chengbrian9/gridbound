@@ -19,7 +19,7 @@ export default function QRLandingPage() {
       {/* Header */}
       <div className="w-full flex justify-center">
         <Image
-          src="/assets/Asset 1.png"
+          src="/assets/Grid Bound Logo.svg"
           alt="GridBound Logo"
           width={300}
           height={100}

@@ -29,7 +29,7 @@ export default function Home() {
         {/* Logo */}
         <div className="w-full flex justify-center mb-8">
           <Image
-            src="/assets/Asset 1.png"
+            src="/assets/Grid Bound Logo.svg"
             alt="Grid+Bound Logo"
             width={300}
             height={100}
