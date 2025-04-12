@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer';
 import { Button } from '@/components/Button';
 import Image from 'next/image';
-import logo from '../../assets/Asset 1.png';
 import { CONTACT } from '@/constants/theme';
 import { Metadata } from 'next';
 
@@ -20,7 +19,7 @@ export default function QRLandingPage() {
       {/* Header */}
       <div className="w-full flex justify-center">
         <Image
-          src={logo}
+          src="/assets/Asset 1.png"
           alt="GridBound Logo"
           width={300}
           height={100}

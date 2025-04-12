@@ -123,7 +123,7 @@ export default function Navbar() {
             className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform py-3 font-primary"
             onClick={handleLinkClick}
           >
-            CONTACT
+            CONTACT US
           </Link>
         </div>
       </div>

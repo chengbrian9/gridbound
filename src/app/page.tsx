@@ -26,6 +26,18 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-[#FBFCF0] overflow-y-auto">
       {/* Main Content */}
       <main className="flex-grow px-6 py-8">
+        {/* Logo */}
+        <div className="w-full flex justify-center mb-8">
+          <Image
+            src="/assets/Asset 1.png"
+            alt="Grid+Bound Logo"
+            width={300}
+            height={100}
+            className="mb-2"
+            priority
+          />
+        </div>
+        
         {/* Carousel Gallery */}
         <div className="w-full max-w-md mx-auto mb-10">
           <ImageCarousel images={carouselImages} />

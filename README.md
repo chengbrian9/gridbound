@@ -59,7 +59,6 @@ The codebase is organized in a standard Next.js App Router structure:
 │   │   ├── qr/      # QR code scanning functionality
 │   │   ├── grants/  # Gridbound grants program
 │   │   ├── commissions/ # Commission request page
-│   │   ├── thank-you/   # Confirmation page
 │   │   └── layout.tsx   # Root layout with common elements
 │   └── components/  # Reusable components
 │       ├── Navbar.tsx   # Navigation with mobile menu
