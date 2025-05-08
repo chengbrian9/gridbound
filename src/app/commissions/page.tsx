@@ -24,7 +24,7 @@ export default function CommissionsPage() {
           Earn Commissions
         </h2>
           <p className="text-lg mb-6 text-center">
-          Earn Up to 25% Commission by Bringing Grid+Bound to Your College Bookstore
+          Earn Up to 25% Commission by bringing Grid+Bound to Your College Bookstore
 
           </p>
     
@@ -55,15 +55,14 @@ We've solved the usual complaints with:
 
 We're already stocked in 10+ university bookstores and on Amazon — students love it, and it stands out instantly on shelves.
 
-🔗 Attached is a one-page PDF with product images and pricing.
+🔗 Attached is a one-page PDF with product details.
 
 We'd love to send samples or help get this into your store.
 
 Best,
 [Your Full Name]
 Grid+Bound (https://grid-bound.com)
-[Your Contact Info]
-[Website or Amazon link, if applicable]`)}`}
+[Your Contact Info]`)}`}
                 className="px-4 py-2 bg-[#78A66B] text-white rounded-md hover:bg-[#5e8353] transition-colors"
               >
                 Use Template

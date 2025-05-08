@@ -17,9 +17,29 @@ export default function Home() {
   // Carousel image
   const carouselImages = [
     {
-      src: '/assets/Amazon Product Photos.png',
-      alt: 'Grid+Bound engineering notebooks product photos'
-    }
+      src: '/assets/1 FRONT COVER.png',
+      alt: 'Grid+Bound notebook front cover',
+    },
+    {
+      src: '/assets/3 FRONT SHEET.png',
+      alt: 'Grid+Bound notebook front sheet',
+    },
+    {
+      src: '/assets/4 INSIDE POCKET.png',
+      alt: 'Grid+Bound notebook inside pocket',
+    },
+    {
+      src: '/assets/5 BACK SHEET.png',
+      alt: 'Grid+Bound notebook back sheet',
+    },
+    {
+      src: '/assets/6 SPREAD POCKET.png',
+      alt: 'Grid+Bound notebook spread with pocket',
+    },
+    {
+      src: '/assets/7 SPREAD SHEETS.png',
+      alt: 'Grid+Bound notebook spread sheets',
+    },
   ];
 
   return (

@@ -42,16 +42,16 @@ export default function GrantsPage() {
           </p>
         </div>
         
-        {/* Airtable Form */}
-        <div className="w-full overflow-hidden">
-          <iframe 
-            className="airtable-embed" 
-            src="https://airtable.com/embed/appvQBPACWF5foEr9/pagB1NOgLiU6Y6aG8/form" 
-            frameBorder="0" 
-            width="100%" 
-            height="533" 
-            style={{ background: 'transparent', border: '1px solid #ccc' }}
-          ></iframe>
+        {/* Airtable Form Button */}
+        <div className="w-full flex justify-center mb-8">
+          <a
+            href="https://airtable.com/appvQBPACWF5foEr9/pagB1NOgLiU6Y6aG8/form"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-[#78A66B] text-white rounded-md hover:bg-[#5e8353] transition-colors"
+          >
+            Apply for a Grant
+          </a>
         </div>
       </div>
       <Footer showDonationLink={true} contactEmail={CONTACT.EMAIL} />

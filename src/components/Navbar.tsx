@@ -77,7 +77,7 @@ export default function Navbar() {
       
       {/* Navigation links - hidden on mobile, visible on larger screens */}
       <div className="hidden md:flex space-x-8">
-        <Link href="/buy" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
+        <Link href="https://www.amazon.com/dp/B0F4B53SLF?utm_source=gridbound&utm_medium=website&utm_campaign=buy_now" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
           BUY NOW
         </Link>
         <Link href="/grants" className="text-[#78A66B] hover:text-black active:text-[#5e8353] transition-all duration-100 text-xl tracking-wide active:scale-95 transform hover:underline font-primary">
